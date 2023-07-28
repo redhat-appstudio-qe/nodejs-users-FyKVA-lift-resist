@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-swiq
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-amkt-tenant/nodejs-users/simple-nodejs-app-swiq@sha256:e9fdbd406f8a2cade13bcbc4e33b9ccd65e18abcbfaef725edcc5bc97403e14b
+        name: my-nodejs
+        resources: {}
+status: {}
